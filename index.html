@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freiwillige Feuerwehr Marxzell, Abteilung Burbach – Kontakt</title>
+<script>
+window.onload = function () {
+  const subject = "Ich bin dabei! 🚒";
+
+  const body = `🎉 Glückwunsch – du hast unser kleines QR-Code-Geheimnis entdeckt! 😋
+
+Hallo zusammen,
+
+ich interessiere mich für eure Feuerwehr und würde mir gerne einmal ganz unverbindlich eine Übung anschauen.
+
+Mögliche Übungstermine:
+
+Einsatzabteilung (ab 17 Jahren):
+- Dienstag, 22.09.2026, ab 19:30 Uhr
+- Dienstag, 06.10.2026, ab 19:30 Uhr
+- Dienstag, 20.10.2026, ab 19:30 Uhr
+
+Jugendfeuerwehr (ab 8 Jahren):
+- Mittwoch, 30.09.2026, ab 18:00 Uhr
+- Mittwoch, 14.10.2026, ab 18:00 Uhr
+- Mittwoch, 04.11.2026, ab 18:00 Uhr
+
+Falls keiner dieser Termine passt, komme ich auch gerne bei einer anderen Übung vorbei. Bitte meldet euch einfach bei mir. 😊
+
+Meine Kontaktdaten:
+
+Name:
+Telefon / Mobil:
+Anschrift (optional):
+
+Viele Grüße!`;
+
+  const recipient = "abt.burbach@feuerwehr-marxzell.de";
+
+  const url = "mailto:" + recipient +
+    "?subject=" + encodeURIComponent(subject) +
+    "&body=" + encodeURIComponent(body);
+
+  window.location.href = url;
+};
+</script>
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f4f4f4;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    margin:0;
+    text-align:center;
+    color:#333;
+}
+.card{
+    background:#fff;
+    padding:2rem;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+    max-width:520px;
+}
+a{
+    display:inline-block;
+    margin-top:1rem;
+    background:#c62828;
+    color:#fff;
+    text-decoration:none;
+    padding:.8rem 1.2rem;
+    border-radius:8px;
+}
+</style>
+</head>
+<body>
+<div class="card">
+<h2>🚒 Freiwillige Feuerwehr Marxzell<br>Abteilung Burbach</h2>
+<p>Falls sich dein Mailprogramm nicht automatisch öffnet, klicke bitte auf den Button.</p>
+<a id="mailLink" href="#">E-Mail öffnen</a>
+</div>
+
+<script>
+const subject = "Ich bin dabei! 🚒";
+const body = `🎉 Glückwunsch – du hast unser kleines QR-Code-Geheimnis entdeckt! 😋
+
+Hallo zusammen,
+
+ich interessiere mich für eure Feuerwehr und würde mir gerne einmal ganz unverbindlich eine Übung anschauen.
+
+Mögliche Übungstermine:
+
+Einsatzabteilung (ab 17 Jahren):
+- Dienstag, 22.09.2026, ab 19:30 Uhr
+- Dienstag, 06.10.2026, ab 19:30 Uhr
+- Dienstag, 20.10.2026, ab 19:30 Uhr
+
+Jugendfeuerwehr (ab 8 Jahren):
+- Mittwoch, 30.09.2026, ab 18:00 Uhr
+- Mittwoch, 14.10.2026, ab 18:00 Uhr
+- Mittwoch, 04.11.2026, ab 18:00 Uhr
+
+Falls keiner dieser Termine passt, komme ich auch gerne bei einer anderen Übung vorbei. Bitte meldet euch einfach bei mir. 😊
+
+Meine Kontaktdaten:
+
+Name:
+Telefon / Mobil:
+Anschrift (optional):
+
+Viele Grüße!`;
+
+const recipient="abt.burbach@feuerwehr-marxzell.de";
+document.getElementById("mailLink").href =
+"mailto:"+recipient+"?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
+</script>
+</body>
+</html>
