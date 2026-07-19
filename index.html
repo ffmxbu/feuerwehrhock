@@ -4,44 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Freiwillige Feuerwehr Marxzell, Abteilung Burbach – Kontakt</title>
-<script>
-window.onload = function () {
-  const subject = "Ich bin dabei! 🚒";
-
-  const body = `🎉 Glückwunsch – du hast unser kleines QR-Code-Geheimnis entdeckt! 😋
-
-Hallo zusammen,
-ich interessiere mich für eure Feuerwehr und würde mir gerne einmal ganz unverbindlich eine Übung anschauen.
-
-Mögliche Übungstermine:
-Einsatzabteilung (ab 17 Jahren):
-- Dienstag, 22.09.2026, ab 19:30 Uhr
-- Dienstag, 06.10.2026, ab 19:30 Uhr
-- Dienstag, 20.10.2026, ab 19:30 Uhr
-
-Jugendfeuerwehr (ab 8 Jahren):
-- Mittwoch, 30.09.2026, ab 18:00 Uhr
-- Mittwoch, 14.10.2026, ab 18:00 Uhr
-- Mittwoch, 04.11.2026, ab 18:00 Uhr
-
-Falls keiner dieser Termine passt, komme ich auch gerne bei einer anderen Übung vorbei. Bitte meldet euch einfach bei mir. 😊
-
-Meine Kontaktdaten:
-Name:
-Telefon / Mobil:
-Anschrift (optional):
-
-Viele Grüße!`;
-
-  const recipient = "abt.burbach@feuerwehr-marxzell.de";
-
-  const url = "mailto:" + recipient +
-    "?subject=" + encodeURIComponent(subject) +
-    "&body=" + encodeURIComponent(body);
-
-  window.location.href = url;
-};
-</script>
 <style>
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -76,8 +38,19 @@ main{
     transition:background-color .2s ease;
 }
 
-.button:hover{
-    background:#b71c1c;
+.secondary-button{
+    background:#1565c0;
+}
+
+.secondary-button:hover{
+    background:#0d47a1;
+}
+
+.hint{
+    margin-top:20px;
+    font-size:.85rem;
+    color:#777;
+    line-height:1.5;
 }
 .footer-links{
     margin-top:30px;
@@ -101,15 +74,36 @@ main{
 </head>
 <body>
 <div class="card">
-<h2>🚒 Freiwillige Feuerwehr 🚒 Marxzell<br>Abteilung Burbach</h2>
-<p>Falls sich dein Mailprogramm nicht automatisch öffnet, klicke bitte auf den Button:</p>
-<a id="mailLink" href="#" class="button">E-Mail öffnen</a>
-  <br><br>
 
-<a href="kontakt.vcf" download class="button"
-   style="background:#1565c0;">
-   📇 Feuerwehr als Kontakt speichern
+<h2>🚒 Schön, dass du da bist!</h2>
+
+<p>
+Wir freuen uns über dein Interesse an der
+<strong>Freiwillige Feuerwehr Marxzell – Abteilung Burbach!</strong>.
+</p>
+
+<p>
+Über den folgenden Button kannst du uns ganz unkompliziert eine bereits
+vorbereitete E-Mail senden. Ergänze gerne (optional) deine Kontaktdaten 
+und sende sie anschließend ab. Wir melden uns anschließend bei dir und 
+laden dich gerne zu einer unverbindlichen Übung ein. 
+</p>
+
+<a id="mailLink" href="#" class="button">
+📧 E-Mail mit vorbereiteter Nachricht öffnen
 </a>
+
+<br><br>
+
+<a href="kontakt.vcf" download class="button secondary-button">
+📇 Feuerwehr als Kontakt speichern
+</a>
+
+<p class="hint">
+Falls sich dein E-Mail-Programm nicht öffnet, prüfe bitte,
+ob auf deinem Gerät eine Standard-Mail-App eingerichtet ist.
+</p>
+
 </div>
 
 <script>
