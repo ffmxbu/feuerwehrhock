@@ -65,7 +65,7 @@ main{
     box-shadow:0 4px 15px rgba(0,0,0,.15);
     max-width:520px;
 }
-a{
+.button{
     display:inline-block;
     margin-top:1rem;
     background:#c62828;
@@ -73,22 +73,29 @@ a{
     text-decoration:none;
     padding:.8rem 1.2rem;
     border-radius:8px;
+    transition:background-color .2s ease;
+}
+
+.button:hover{
+    background:#b71c1c;
 }
 .footer-links{
-    margin-top:40px;
+    margin-top:30px;
+    margin-bottom:15px;
     text-align:center;
-    font-size:0.75rem;
-    color:#9e9e9e;
+    font-size:0.72rem;
+    color:#b0b0b0;
 }
 
 .footer-links a{
-    color:#9e9e9e;
+    color:#b0b0b0;
     text-decoration:none;
+    padding:0 4px;
 }
 
 .footer-links a:hover{
     text-decoration:underline;
-    color:#757575;
+    color:#7d7d7d;
 }
 </style>
 </head>
@@ -96,12 +103,12 @@ a{
 <div class="card">
 <h2>🚒 Freiwillige Feuerwehr 🚒 Marxzell<br>Abteilung Burbach</h2>
 <p>Falls sich dein Mailprogramm nicht automatisch öffnet, klicke bitte auf den Button:</p>
-<a id="mailLink" href="#">E-Mail öffnen</a>
+<a id="mailLink" href="#" class="button">E-Mail öffnen</a>
   <br><br>
 
-<a href="kontakt.vcf" download
-  style="background:#1565c0;">
-  📇 Feuerwehr als Kontakt speichern
+<a href="kontakt.vcf" download class="button"
+   style="background:#1565c0;">
+   📇 Feuerwehr als Kontakt speichern
 </a>
 </div>
 
